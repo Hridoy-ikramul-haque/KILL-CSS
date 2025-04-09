@@ -1,0 +1,2 @@
+3 ways to add css 
+if we add external link after internal css then external css proirity is high and it's override internal css. 
