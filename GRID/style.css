@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: lightcoral;
+    width: 90vw;
+    height: 50vh;
+    display: grid;
+    /* grid-template-columns: 200px auto 200px; */
+    /* grid-template-columns:1fr 2fr; */
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    /* grid-row-gap: 10px;
+    grid-column-gap: 10px; */
+    grid-gap: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.child{
+    background-color: blue;
+    border: 2px solid red;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
