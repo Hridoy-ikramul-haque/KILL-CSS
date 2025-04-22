@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+}
+h2,h1{
+    /* margin-bottom: 15px; */
+    width: 300px;
+    margin: 15px auto;
+}
+.gird_con{
+    background-color: #fff;
+    padding: 20px;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+.gird_con div{
+    background-color: rebeccapurple;
+    /* margin: 10px; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.layouts{
+    background-color: #f0d0f0;
+    margin: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.layouts .header{
+    grid-column: 1/-1;
+}
+.layouts .footer{
+    grid-column: 1/-1;
+}
+
+.layouts div{
+    background-color: darkcyan;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* pungi */
+.pungi{
+    margin: 80px 20px;
+    background-color: #bbb;
+    padding: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+.pungi .header{
+    font-size: 20px;
+    background: black;
+    color: lightcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.pungi .middle{
+    background-color: lightgreen;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+.pungi .middle div{
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.middle .img1{
+    background-color: blue;
+    grid-area: 1/3;
+
+}
+.middle .img2{
+    background-color: purple;
+}
+.middle .card{
+    background-color: #08d8dd;
+}
+.middle .corner{
+    background-color: #0232ff;
+}
+
+.pungi .footers{
+    background-color: red;
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
