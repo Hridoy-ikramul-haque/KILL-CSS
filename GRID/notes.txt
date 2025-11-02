@@ -2,3 +2,141 @@
 https://www.w3schools.com/css/css_grid.asp
 https://css-tricks.com/snippets/css/complete-guide-grid/
 https://web.dev/learn/css/grid
+
+
+
+
+🎯 CSS GRID CHEATSHEET (Bangla Version)
+
+✅ Grid শুরু করতে
+.container {
+  display: grid;
+}
+
+✅ Column সেট করতে
+grid-template-columns: 100px 100px 100px;
+
+✅ Repeat ব্যবহার
+grid-template-columns: repeat(3, 100px);
+
+✅ Fraction Unit (Most Used)
+grid-template-columns: 1fr 2fr 1fr;
+
+✅ Rows সেট করতে
+grid-template-rows: 100px 200px;
+
+✅ Gap (Spacing)
+gap: 20px;
+row-gap: 20px;
+column-gap: 10px;
+
+✅ Responsive Auto-fit / Auto-fill
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+✅ minmax()
+grid-template-columns: minmax(100px, 300px);
+
+✅ Grid Auto Flow
+grid-auto-flow: row;
+grid-auto-flow: column;
+grid-auto-flow: dense;
+
+✅ Grid Item Span
+.item {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+✅ Line based placement
+.item {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+✅ Full Stretch
+grid-row: 1 / -1;
+
+✅ Named template area (Powerful)
+Parent:
+grid-template-areas:
+  "header header"
+  "sidebar main"
+  "footer footer";
+
+Children:
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+✅ Implicit Grid (Extra items)
+grid-auto-rows: 100px;
+grid-auto-columns: 200px;
+
+✅ Alignment Properties (Container)
+justify-items: center; /* x-axis */
+align-items: center;   /* y-axis */
+place-items: center;   /* shortcut */
+
+justify-content: space-between;
+align-content: space-between;
+
+✅ Alignment (Single Item)
+justify-self: center;
+align-self: center;
+
+✅ Center everything
+place-items: center;
+
+✅ Simple 3 Column Layout
+grid-template-columns: repeat(3, 1fr);
+
+✅ Responsive Card Layout
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+
+✅ Masonry Style
+grid-auto-rows: 10px;
+
+✅ Order Items
+.item {
+  order: 2;
+}
+
+✅ Nested Grid
+.child {
+  display: grid;
+}
+
+✅ Grid Shorthand
+grid: auto / repeat(3, 1fr);
+
+✅ Quick inspect tip
+Chrome DevTools → Layout → Grid Overlay ON
+
+📌 Rules (Pocket Guide)
+Flex = 1D layout
+Grid = 2D layout
+
+Use fr more, px less
+auto-fit + minmax = responsive magic
+
+❌ Avoid
+Too many fixed px
+Ignoring gap
+Not using chrome overlay
+
+🔥 Bonus Comparison
+Navbar → Flex
+Card Layout → Grid
+Complex Layout → Grid
+Responsive Columns → Grid
+
+🏁 Most Used Snippet
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+}

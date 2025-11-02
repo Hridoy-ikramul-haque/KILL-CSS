@@ -8,11 +8,11 @@
 body{
     font-family: "Poppins", sans-serif;
 }
-h1{
+/* h1{
     margin: 50px 0px;
     text-align: center;
     
-}
+} */
 .container{
     background: #eee;
     max-width: 900px;
@@ -66,4 +66,41 @@ h1{
 .container div:nth-child(6)
 {
     grid-column: 3/5;
+}
+
+
+
+/* starts here */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.basic_greed{
+    background-color: #777;
+    margin: 50px 100px;
+    padding: 50px;
+}
+.basic_greed h1{
+    text-align: center;
+}
+
+.grid_container{
+    display: grid;
+    /* grid-template-columns: 200px 200px; */
+    grid-template-columns: ;
+}
+.item{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
