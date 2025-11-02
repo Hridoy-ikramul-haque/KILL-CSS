@@ -1,0 +1,11 @@
+
+🔥 Core Properties:
+display: grid → enable grid
+grid-template-columns → define columns
+grid-template-rows → define rows
+gap → space between items
+grid-area → place items anywhere in the grid
+
+💡 Pro Tips:
+Use auto-fit & minmax() for fully responsive grids.
+Combine with media queries for different screen sizes.
